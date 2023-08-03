@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+main {
+    max-width: clamp(700px, 50%, 900px);
+    padding: 0 2rem;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+    margin: 0 auto;
+}
