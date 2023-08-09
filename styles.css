@@ -19,3 +19,17 @@ main {
     border-right: solid 2px black;
     margin: 0 auto;
 }
+.my-picture {
+    float: left;
+    max-width: 75px;
+    margin-right: 1rem;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 .25rem;
+    line-height: 1.5rem;
+}
+#objective{
+
+display: flow-root;}
