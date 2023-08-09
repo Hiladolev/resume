@@ -8,21 +8,40 @@ body {
 
 nav {
     position: sticky;
-    top: 0;
+    inset-inline-start: 0;
     background-color: white;
+    display: flex;
+    justify-content: center;
 }
 
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 0;
+}
+
+nav ul li {
+    margin-inline: .25rem;
+    margin-block: 0;
+    line-height: 1.5rem;
+    list-style: none;
+}
 main {
-    max-width: clamp(700px, 50%, 900px);
-    padding: 0 2rem;
-    border-left: solid 2px black;
-    border-right: solid 2px black;
-    margin: 0 auto;
+    max-inline-size: clamp(700px, 50%, 900px);
+    padding-inline: 2rem;
+    padding-block: 0;
+    border-inline-start: solid 2px black;
+    border-inline-end: solid 2px black;
+    margin-inline: auto;
+    margin-block: 0;
+}
+
+.flex-header{
+    flex-basis: 100%;
 }
 .my-picture {
-    float: left;
-    max-width: 75px;
-    margin-right: 1rem;
+max-inline-size: 75px;
+margin-inline-end: 1rem ;
 }
 
 nav ul li {
@@ -31,5 +50,6 @@ nav ul li {
     line-height: 1.5rem;
 }
 #objective{
-
-display: flow-root;}
+display: flex;
+flex-wrap: wrap;
+}
