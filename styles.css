@@ -37,7 +37,7 @@ nav {
 }
 .resume-list h3{
     margin-block-end:0.1em;
-    font-weight: normal;
+    color:var(--important-color);
 }
 
 #experience li{
@@ -120,23 +120,6 @@ color: white;
     }
 
 }
-@media screen and (min-width: 1200px) {
-    main {
-        grid-template-columns: 1fr 900px 1fr;
-    }
-
-    .full-bleed {
-        padding-inline: 15%;
-    }
-}
-@media print {
-    #objective {
-        background-color: white;
-        color: black;
-    }
-
-
-}
 
 #skills li{
     color: white;
@@ -156,3 +139,29 @@ color: white;
     padding-inline: 0;
 
 }
+@media screen and (min-width: 1200px) {
+    main {
+        grid-template-columns: 1fr 900px 1fr;
+    }
+
+    .full-bleed {
+        padding-inline: 15%;
+    }
+}
+@media print {
+    #objective {
+        background-color: white;
+        color: black;
+    }
+    #objective h2 {
+        color: black;
+    }
+    #skills li {
+        background-color: white;
+        color: black;
+    }
+nav{
+    display: none;
+}
+}
+
