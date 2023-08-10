@@ -139,6 +139,9 @@ color: white;
     padding-inline: 0;
 
 }
+hr{
+    width: 1000px;
+}
 @media screen and (min-width: 1200px) {
     main {
         grid-template-columns: 1fr 900px 1fr;
