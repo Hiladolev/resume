@@ -29,6 +29,7 @@ nav {
     position: sticky;
     inset-inline-start: 0;
     background-color: white;
+    top: 0; /* TODO: remove when fixed */
     display: flex;
     justify-content: center;
 }
@@ -63,7 +64,7 @@ main {
 padding-block: 0;
 margin-block: 0;
 display: grid;
-grid-template-columns: 50px 1fr 50px;
+grid-template-columns: 25px 1fr 25px;
 row-gap: 10px;
 }
 
@@ -80,7 +81,7 @@ main > * {
 }
 .my-picture {
 max-inline-size: 75px;
-margin-inline-end: 1rem ;
+margin-inline-end: 0 ;
 }
 
 nav ul li {
@@ -91,20 +92,22 @@ nav ul li {
 #objective{
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
+text-align: center;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 768px) {
     main {
-        grid-template-columns: 25px 1fr 25px;
+        grid-template-columns: 50px 1fr 50px;
     }
 
     #objective {
-        justify-content: center;
-        text-align: center;
+        justify-content: initial;
+        text-align: initial;
     }
 
     .my-picture {
-        margin-inline-end: 0;
+        margin-inline-end: 1rem;
     }
 
 }
