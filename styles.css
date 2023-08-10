@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
 }
-
+:root{
+    --important-color: #009688;
+}
 body {
     font-size: 16px;
     display: grid;
@@ -94,7 +96,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 text-align: center;
-background-color: #009688;
+background-color:var(--important-color);
 color: white;
 }
 
@@ -133,5 +135,24 @@ color: white;
         color: black;
     }
 
+
+}
+
+#skills li{
+    color: white;
+    background-color:var(--important-color);
+    list-style: none;
+    margin-inline: .25rem;
+    display: inline-block;
+    text-align: center;
+    padding-inline:0.25rem;
+    padding-block: 0.25rem;
+    margin-block: .25rem;
+}
+
+#skills ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 0;
 
 }
