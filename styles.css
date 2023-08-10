@@ -7,8 +7,14 @@ body {
     display: grid;
     margin-inline: 0;
     margin-block: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
+h1,h2{
+    font-family: 'Dosis',sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
 nav {
     position: sticky;
     inset-inline-start: 0;
@@ -34,6 +40,7 @@ padding-block: 0;
 margin-block: 0;
 display: grid;
 grid-template-columns: 50px 1fr 50px;
+row-gap: 10px;
 }
 
 main > * {
