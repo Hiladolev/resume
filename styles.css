@@ -94,6 +94,12 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 text-align: center;
+background-color: #009688;
+color: white;
+}
+
+#objective h2 {
+    color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -119,4 +125,12 @@ text-align: center;
     .full-bleed {
         padding-inline: 15%;
     }
+}
+@media print {
+    #objective {
+        background-color: white;
+        color: black;
+    }
+
+
 }
