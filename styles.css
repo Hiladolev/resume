@@ -57,7 +57,9 @@ nav ul li {
     line-height: 1.5rem;
     list-style: none;
 }
-
+a{
+    text-decoration: none
+}
 .social_logo {
     inline-size: 1rem;
     margin-inline: .25rem;
