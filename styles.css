@@ -11,7 +11,11 @@ body {
   margin-block: 0;
   font-family: "Montserrat", sans-serif;
 }
-
+hr {
+  /* width: 100%; */
+  display: none;
+}
+/*Headings*/
 h1,
 h2 {
   font-family: "Dosis", sans-serif;
@@ -23,11 +27,24 @@ h1 {
   margin-block-end: 0;
   color: var(--important-color);
 }
-
+/*h2 - my role*/
+.role {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-block-start: 0.23em;
+}
 h2 {
   margin-block-end: 0.75rem;
   font-weight: 300;
 }
+
+.resume-list h3 {
+  margin-block-end: 0.1em;
+  color: var(--important-color);
+}
+
+/*nav*/
 nav {
   position: sticky;
   inset-inline-start: 0;
@@ -36,26 +53,11 @@ nav {
   display: flex;
   justify-content: center;
 }
-.resume-list h3 {
-  margin-block-end: 0.1em;
-  color: var(--important-color);
-}
-
-#experience li,
-#education li {
-  list-style: square;
-}
 nav ul {
   display: flex;
   flex-wrap: wrap;
   padding-inline: 0;
   justify-content: center;
-}
-.role {
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  margin-block-start: 0.23em;
 }
 nav ul li,
 #contact-info li {
@@ -64,14 +66,26 @@ nav ul li,
   line-height: 1.5rem;
   list-style: none;
 }
+nav ul li {
+  display: inline;
+  margin: 0 0.5rem;
+}
+/*nav + contact info a element*/
 a {
   text-decoration: none;
   color: rgb(85, 26, 139);
 }
+/*svg*/
 .social_logo {
   inline-size: 1rem;
   margin-inline: 0.25rem;
 }
+/*education and experience sections list*/
+#experience li,
+#education li {
+  list-style: square;
+}
+/*all content without nav*/
 main {
   padding-block: 0;
   margin-block: 0;
@@ -79,27 +93,27 @@ main {
   grid-template-columns: 25px 1fr 25px;
   row-gap: 10px;
 }
-
 main > * {
   grid-column: 2;
 }
 
+/*objective article*/
+/*full width*/
 .full-bleed {
   grid-column: 1 / span 3;
   padding-inline: 2rem;
 }
+/*header*/
 .flex-header {
   flex-basis: 100%;
 }
+#objective h2 {
+  color: white;
+}
+/*objective article - my picture*/
 .my-picture {
   max-inline-size: 75px;
   margin-inline-end: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 0.5rem;
-  line-height: 1.5rem;
 }
 #objective {
   display: flex;
@@ -109,27 +123,7 @@ nav ul li {
   background-color: var(--important-color);
   color: white;
 }
-
-#objective h2 {
-  color: white;
-}
-
-@media screen and (min-width: 768px) {
-  main {
-    grid-template-columns: 50px 1fr 50px;
-  }
-
-  #objective {
-    justify-content: initial;
-    text-align: initial;
-  }
-
-  .my-picture {
-    margin-inline-end: 1rem;
-    margin-block-end: 1rem;
-  }
-}
-
+/*skills sections*/
 #skills li {
   color: white;
   background-color: var(--important-color);
@@ -147,9 +141,25 @@ nav ul li {
   flex-wrap: wrap;
   padding-inline: 0;
 }
-hr {
-  width: 100%;
+
+/*Media Queries*/
+/*for tablets/laptops*/
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: 50px 1fr 50px;
+  }
+
+  #objective {
+    justify-content: initial;
+    text-align: initial;
+  }
+
+  .my-picture {
+    margin-inline-end: 1rem;
+    margin-block-end: 1rem;
+  }
 }
+/*for desktop*/
 @media screen and (min-width: 1200px) {
   main {
     grid-template-columns: 1fr 900px 1fr;
@@ -159,6 +169,7 @@ hr {
     padding-inline: 15%;
   }
 }
+/*for print*/
 @media print {
   #objective {
     background-color: white;
