@@ -70,6 +70,17 @@ nav ul li {
   display: inline;
   margin: 0 0.5rem;
 }
+/*all content without nav*/
+main {
+  padding-block: 0;
+  margin-block: 0;
+  display: grid;
+  grid-template-columns: 25px 1fr 25px;
+  row-gap: 10px;
+}
+main > * {
+  grid-column: 2;
+}
 /*nav + contact info a element*/
 a {
   text-decoration: none;
@@ -84,17 +95,6 @@ a {
 #experience li,
 #education li {
   list-style: square;
-}
-/*all content without nav*/
-main {
-  padding-block: 0;
-  margin-block: 0;
-  display: grid;
-  grid-template-columns: 25px 1fr 25px;
-  row-gap: 10px;
-}
-main > * {
-  grid-column: 2;
 }
 
 /*objective article*/
