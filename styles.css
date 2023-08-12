@@ -42,7 +42,8 @@ nav {
     color:var(--important-color);
 }
 
-#experience li{
+
+#experience li,#education li{
     list-style: square;   
 }
 nav ul{
