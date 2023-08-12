@@ -81,6 +81,9 @@ main {
 main > * {
   grid-column: 2;
 }
+.sections {
+  display: grid;
+}
 /*nav + contact info a element*/
 a {
   text-decoration: none;
