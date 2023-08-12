@@ -51,7 +51,7 @@ nav ul{
 
 }
 
-nav ul li {
+nav ul li ,#contact-info li{
     margin-inline: .25rem;
     margin-block: 0;
     line-height: 1.5rem;
