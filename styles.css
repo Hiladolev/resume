@@ -12,6 +12,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/*Headings*/
 h1,
 h2 {
   font-family: "Dosis", sans-serif;
@@ -23,11 +24,24 @@ h1 {
   margin-block-end: 0;
   color: var(--important-color);
 }
-
+/*h2 - my role*/
+.role {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-block-start: 0.23em;
+}
 h2 {
   margin-block-end: 0.75rem;
   font-weight: 300;
 }
+
+.resume-list h3 {
+  margin-block-end: 0.1em;
+  color: var(--important-color);
+}
+
+/*nav*/
 nav {
   position: sticky;
   inset-inline-start: 0;
@@ -36,26 +50,11 @@ nav {
   display: flex;
   justify-content: center;
 }
-.resume-list h3 {
-  margin-block-end: 0.1em;
-  color: var(--important-color);
-}
-
-#experience li,
-#education li {
-  list-style: square;
-}
 nav ul {
   display: flex;
   flex-wrap: wrap;
   padding-inline: 0;
   justify-content: center;
-}
-.role {
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  margin-block-start: 0.23em;
 }
 nav ul li,
 #contact-info li {
@@ -64,14 +63,17 @@ nav ul li,
   line-height: 1.5rem;
   list-style: none;
 }
-a {
-  text-decoration: none;
-  color: rgb(85, 26, 139);
+#languages li {
+  list-style: none;
 }
-.social_logo {
-  inline-size: 1rem;
-  margin-inline: 0.25rem;
+dd {
+  margin-inline-start: 0;
+  margin-block: 0.5rem 1.25rem;
 }
+dt {
+  font-weight: bold;
+}
+/*all content without nav*/
 main {
   padding-block: 0;
   margin-block: 0;
@@ -79,27 +81,43 @@ main {
   grid-template-columns: 25px 1fr 25px;
   row-gap: 10px;
 }
-
 main > * {
   grid-column: 2;
 }
 
+/*nav + contact info a element*/
+a {
+  text-decoration: none;
+  color: rgb(85, 26, 139);
+}
+/*svg*/
+.social_logo {
+  inline-size: 1rem;
+  margin-inline: 0.25rem;
+}
+/*education and experience sections list*/
+#experience li,
+#education li {
+  list-style: square;
+}
+
+/*objective article*/
+/*full width*/
 .full-bleed {
   grid-column: 1 / span 3;
   padding-inline: 2rem;
 }
+/*header*/
 .flex-header {
   flex-basis: 100%;
 }
+#objective h2 {
+  color: white;
+}
+/*objective article - my picture*/
 .my-picture {
   max-inline-size: 75px;
   margin-inline-end: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 0.5rem;
-  line-height: 1.5rem;
 }
 #objective {
   display: flex;
@@ -110,26 +128,13 @@ nav ul li {
   color: white;
 }
 
-#objective h2 {
-  color: white;
+/**/
+#skills ul,
+#languages ul,
+#contact-info ul {
+  padding-inline: 0;
 }
-
-@media screen and (min-width: 768px) {
-  main {
-    grid-template-columns: 50px 1fr 50px;
-  }
-
-  #objective {
-    justify-content: initial;
-    text-align: initial;
-  }
-
-  .my-picture {
-    margin-inline-end: 1rem;
-    margin-block-end: 1rem;
-  }
-}
-
+/*skills sections*/
 #skills li {
   color: white;
   background-color: var(--important-color);
@@ -145,33 +150,139 @@ nav ul li {
 #skills ul {
   display: flex;
   flex-wrap: wrap;
-  padding-inline: 0;
 }
-hr {
-  width: 100%;
-}
-@media screen and (min-width: 1200px) {
+
+/*Media Queries*/
+/*for tablets/laptops*/
+@media screen and (min-width: 768px) {
   main {
-    grid-template-columns: 1fr 900px 1fr;
+    grid-template-columns: 50px 1fr 50px;
   }
 
+  #objective {
+    justify-content: initial;
+    text-align: initial;
+  }
+
+  .my-picture {
+    margin-inline-end: 1rem;
+    margin-block-end: 1rem;
+  }
+  #skills ul {
+    flex-direction: column;
+  }
+  #skills li {
+    width: min-content;
+  }
+  /*grid for article sections*/
+  .sections {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 100px;
+    grid-template-rows: 300px 430px 110px 140px;
+  }
+  #experience {
+    grid-column: 1;
+  }
+  #contact-info {
+    grid-column: 2;
+  }
+  #education {
+    grid-row: 1;
+  }
+  .last-sections {
+    grid-row: 4/5;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .last-sections section hr {
+    width: 100%;
+  }
+  #militaryService {
+    margin-inline-start: 10%;
+  }
+}
+/*for desktops*/
+@media screen and (min-width: 1200px) {
+  main {
+    grid-template-columns: 1fr 1000px 1fr;
+  }
+  .sections {
+    grid-template-rows: 280px 430px 140px 140px;
+  }
+  .last-sections {
+    grid-row: 3/4;
+    margin-inline-start: -3rem;
+    margin-block-start: 3%;
+  }
   .full-bleed {
     padding-inline: 15%;
   }
 }
+
+/*for print*/
 @media print {
+  /*To enable background printing */
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  @page {
+    margin-top: 0.55in;
+    margin-bottom: 0.75in;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .full-bleed {
+    grid-column: 1 / span 3;
+    padding-inline: 2rem;
+  }
+  .my-picture {
+    margin-inline-end: 1rem;
+    margin-block-end: 1rem;
+  }
   #objective {
-    background-color: white;
-    color: black;
+    justify-content: initial;
+    text-align: initial;
   }
-  #objective h2 {
-    color: black;
-  }
-  #skills li {
-    background-color: white;
-    color: black;
+  .flex-header {
+    flex-basis: 100%;
   }
   nav {
     display: none;
+  }
+  body {
+    font-size: 11px;
+  }
+  hr {
+    width: 95%;
+  }
+  /*grid for article sections*/
+  .sections {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 200px 300px 110px;
+  }
+  #experience {
+    grid-column: 1;
+  }
+  #contact-info {
+    grid-column: 2;
+  }
+  #education {
+    grid-row: 1;
+  }
+
+  #skills li {
+    width: min-content;
+  }
+  #skills ul {
+    flex-direction: row;
+  }
+  .last-sections {
+    grid-row: 3/4;
+    display: flex;
+    justify-content: space-evenly;
+    margin-inline-start: -3rem;
   }
 }
