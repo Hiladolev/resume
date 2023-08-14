@@ -179,6 +179,7 @@ a {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-column-gap: 100px;
+    grid-template-rows: 280px 430px 140px 140px;
   }
   #experience {
     grid-column: 1;
@@ -188,6 +189,10 @@ a {
   }
   #education {
     grid-row: 1;
+  }
+  #recommendation,
+  #militaryService {
+    grid-column: 1;
   }
 }
 /*for desktops*/
@@ -219,10 +224,18 @@ a {
   body {
     font-size: 11px;
   }
+  hr {
+    width: 95%;
+  }
+  #recommendation hr,
+  #militaryService hr {
+    display: none;
+  }
   /*grid for article sections*/
   .sections {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 200px 300px 100px;
   }
   #experience {
     grid-column: 1;
@@ -233,10 +246,14 @@ a {
   #education {
     grid-row: 1;
   }
-  #skills ul {
-    flex-direction: column;
+  #recommendation,
+  #militaryService {
+    grid-column: 1;
   }
   #skills li {
     width: min-content;
+  }
+  #skills ul {
+    flex-direction: row;
   }
 }
