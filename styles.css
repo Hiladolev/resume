@@ -83,6 +83,16 @@ main > * {
 }
 .sections {
   display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+#experience {
+  grid-column: 1;
+}
+#contact-info {
+  grid-column: 2;
+}
+#education {
+  grid-row: 1;
 }
 /*nav + contact info a element*/
 a {
@@ -187,5 +197,8 @@ a {
   }
   nav {
     display: none;
+  }
+  body {
+    font-size: 11px;
   }
 }
