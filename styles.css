@@ -222,16 +222,31 @@ a {
 
 /*for print*/
 @media print {
+  /*To enable background printing */
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  @page {
+    margin-top: 0.55in;
+    margin-bottom: 0.75in;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .full-bleed {
+    grid-column: 1 / span 3;
+    padding-inline: 2rem;
+  }
+  .my-picture {
+    margin-inline-end: 1rem;
+    margin-block-end: 1rem;
+  }
   #objective {
-    background-color: white;
-    color: black;
+    justify-content: initial;
+    text-align: initial;
   }
-  #objective h2 {
-    color: black;
-  }
-  #skills li {
-    background-color: white;
-    color: black;
+  .flex-header {
+    flex-basis: 100%;
   }
   nav {
     display: none;
