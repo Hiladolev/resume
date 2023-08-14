@@ -11,10 +11,7 @@ body {
   margin-block: 0;
   font-family: "Montserrat", sans-serif;
 }
-hr {
-  /* width: 100%; */
-  display: none;
-}
+
 /*Headings*/
 h1,
 h2 {
