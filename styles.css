@@ -153,6 +153,12 @@ a {
     margin-inline-end: 1rem;
     margin-block-end: 1rem;
   }
+  #skills ul {
+    flex-direction: column;
+  }
+  #skills li {
+    width: min-content;
+  }
   /*grid for article sections*/
   .sections {
     display: grid;
@@ -210,5 +216,11 @@ a {
   }
   #education {
     grid-row: 1;
+  }
+  #skills ul {
+    flex-direction: column;
+  }
+  #skills li {
+    width: min-content;
   }
 }
