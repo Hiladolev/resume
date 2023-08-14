@@ -81,6 +81,7 @@ main {
 main > * {
   grid-column: 2;
 }
+/*grid for article sections*/
 .sections {
   display: grid;
   grid-template-columns: 3fr 1fr;
