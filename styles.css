@@ -63,7 +63,16 @@ nav ul li,
   line-height: 1.5rem;
   list-style: none;
 }
-
+#languages li {
+  list-style: none;
+}
+dd {
+  margin-inline-start: 0;
+  margin-block: 0.5rem 1.25rem;
+}
+dt {
+  font-weight: bold;
+}
 /*all content without nav*/
 main {
   padding-block: 0;
@@ -118,6 +127,13 @@ a {
   background-color: var(--important-color);
   color: white;
 }
+
+/**/
+#skills ul,
+#languages ul,
+#contact-info ul {
+  padding-inline: 0;
+}
 /*skills sections*/
 #skills li {
   color: white;
@@ -134,7 +150,6 @@ a {
 #skills ul {
   display: flex;
   flex-wrap: wrap;
-  padding-inline: 0;
 }
 
 /*Media Queries*/
@@ -163,6 +178,7 @@ a {
   .sections {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-column-gap: 100px;
   }
   #experience {
     grid-column: 1;
@@ -177,7 +193,7 @@ a {
 /*for desktops*/
 @media screen and (min-width: 1200px) {
   main {
-    grid-template-columns: 1fr 900px 1fr;
+    grid-template-columns: 1fr 1000px 1fr;
   }
 
   .full-bleed {
