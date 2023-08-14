@@ -158,16 +158,7 @@ a {
   main {
     grid-template-columns: 50px 1fr 50px;
   }
-  .last-sections {
-    grid-row: 3/4;
-    display: flex;
-    justify-content: space-evenly;
-    margin-inline-start: -3rem;
-    margin-block-start: 3%;
-  }
-  .last-sections section hr {
-    width: 100%;
-  }
+
   #objective {
     justify-content: initial;
     text-align: initial;
@@ -188,7 +179,7 @@ a {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-column-gap: 100px;
-    grid-template-rows: 280px 430px 140px 140px;
+    grid-template-rows: 300px 430px 110px 140px;
   }
   #experience {
     grid-column: 1;
@@ -199,17 +190,36 @@ a {
   #education {
     grid-row: 1;
   }
+  .last-sections {
+    grid-row: 4/5;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .last-sections section hr {
+    width: 100%;
+  }
+  #militaryService {
+    margin-inline-start: 10%;
+  }
 }
 /*for desktops*/
 @media screen and (min-width: 1200px) {
   main {
     grid-template-columns: 1fr 1000px 1fr;
   }
-
+  .sections {
+    grid-template-rows: 280px 430px 140px 140px;
+  }
+  .last-sections {
+    grid-row: 3/4;
+    margin-inline-start: -3rem;
+    margin-block-start: 3%;
+  }
   .full-bleed {
     padding-inline: 15%;
   }
 }
+
 /*for print*/
 @media print {
   #objective {
