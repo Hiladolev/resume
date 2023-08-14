@@ -162,6 +162,7 @@ a {
     grid-row: 3/4;
     display: flex;
     justify-content: space-evenly;
+    margin-inline-start: -3rem;
     margin-block-start: 3%;
   }
   .last-sections section hr {
@@ -257,5 +258,6 @@ a {
     grid-row: 3/4;
     display: flex;
     justify-content: space-evenly;
+    margin-inline-start: -3rem;
   }
 }
