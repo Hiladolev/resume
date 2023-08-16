@@ -56,12 +56,18 @@ nav ul {
   padding-inline: 0;
   justify-content: center;
 }
+nav ul li {
+  margin-block: 0;
+}
 nav ul li,
 #contact-info li {
   margin-inline: 0.25rem;
-  margin-block: 0;
   line-height: 1.5rem;
   list-style: none;
+}
+
+#contact-info li {
+  margin-block: 0.25rem;
 }
 #languages li {
   list-style: none;
@@ -284,5 +290,8 @@ a {
     display: flex;
     justify-content: space-evenly;
     margin-inline-start: -3rem;
+  }
+  #contact-info li {
+    margin-block: 0;
   }
 }
