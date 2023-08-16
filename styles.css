@@ -162,7 +162,7 @@ a {
 /*for tablets/laptops*/
 @media screen and (min-width: 768px) {
   main {
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: 40px 1fr 40px;
   }
 
   #objective {
@@ -183,9 +183,9 @@ a {
   /*grid for article sections*/
   .sections {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-column-gap: 100px;
-    grid-template-rows: 300px 430px 110px 140px;
+    grid-template-columns: 3fr 1.5fr;
+    grid-column-gap: 91px;
+    grid-template-rows: 300px 430px 110px 160px;
   }
   #experience {
     grid-column: 1;
