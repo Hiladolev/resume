@@ -324,8 +324,4 @@ footer {
     position: fixed;
     bottom: 0;
   }
-  /*hr on the same line won't make one line together*/
-  hr {
-    width: 95%;
-  }
 }
