@@ -200,7 +200,7 @@ footer {
     display: grid;
     grid-template-columns: 3fr 1.5fr;
     grid-column-gap: 100px;
-    grid-template-rows: 300px 430px 110px 160px;
+    grid-template-rows: 350px 430px 110px 160px;
     row-gap: 13px;
   }
   #experience {
@@ -232,7 +232,7 @@ footer {
   }
   /*main sections grid*/
   .sections {
-    grid-template-rows: 280px 430px 140px 140px;
+    grid-template-rows: 310px 420px 140px 140px;
     row-gap: 13px;
   }
   .last-sections {
@@ -290,7 +290,7 @@ footer {
   .sections {
     display: grid;
     grid-template-columns: 3fr 1.5fr;
-    grid-template-rows: 200px 300px 110px;
+    grid-template-rows: 220px 300px 110px;
     grid-column-gap: 50px;
     row-gap: 13px;
   }
