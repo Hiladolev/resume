@@ -185,8 +185,9 @@ footer {
     margin-block-end: 1rem;
   }
   #objective p {
-    max-width: 700px;
+    max-width: 600px;
   }
+
   /*SKILLS SECTION into column*/
   #skills ul {
     flex-direction: column;
@@ -264,7 +265,6 @@ footer {
   nav {
     display: none;
   }
-
   /*OBJECTIVE ARTICLE*/
   /*full width*/
   .full-bleed {
@@ -281,6 +281,9 @@ footer {
   }
   .flex-header {
     flex-basis: 100%;
+  }
+  #objective p {
+    max-width: 600px;
   }
   /*MAIN SECTIONS*/
   /*article sections grid*/
