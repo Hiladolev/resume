@@ -184,6 +184,9 @@ footer {
     margin-inline-end: 1rem;
     margin-block-end: 1rem;
   }
+  #objective p {
+    max-width: 700px;
+  }
   /*SKILLS SECTION into column*/
   #skills ul {
     flex-direction: column;
