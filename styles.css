@@ -188,10 +188,6 @@ footer {
     max-width: 600px;
   }
 
-  /*SKILLS SECTION into column*/
-  #skills ul {
-    flex-direction: column;
-  }
   #skills li {
     width: min-content;
   }
