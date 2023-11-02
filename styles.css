@@ -123,7 +123,8 @@ a {
 }
 /*my picture*/
 .my-picture {
-  max-inline-size: 100px;
+  max-inline-size: 108px;
+  max-block-size: 126px;
   margin-inline-end: 0;
 }
 #objective {
